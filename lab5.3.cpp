@@ -40,7 +40,7 @@ int main()
 		do
 		{
 			k++;
-			double R = (x * x) / ((2 * k + 1) * 2 * k);
+			double R = (4 * x * x) / ((2 * k + 1) * 2 * k);
 				a *= R;
 			S += a;
 		
