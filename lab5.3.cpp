@@ -33,17 +33,18 @@ int main()
 		if (abs(x) >= 1)
 			return ((cos(2 * x) + 1) / (cos(x) + sin(x) * sin(x)));
 		else
-		double S;
-		int k = 0;
-		double a = (2 * x) / 1.;
-		double S = a;
-		do
 		{
-			k++;
-			double R = (4 * x * x) / ((2 * k + 1) * 2 * k);
+			int k = 0;
+			double a = (2 * x) / 1.;
+			double S = a;
+			do
+			{
+				k++;
+				double R = (4 * x * x) / ((2 * k + 1) * 2 * k);
 				a *= R;
-			S += a;
-		
-		} while (k < 6);
-		return S;
+				S += a;
+
+			} while (k < 6);
+			return S;
+		}
 }
